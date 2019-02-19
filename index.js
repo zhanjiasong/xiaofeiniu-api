@@ -23,7 +23,7 @@ app.listen(PORT,()=>{
 app.use(cors());
 app.use(bodyParser.json());//把appliction/JSON格式的请求主体解析出来放入req.body属性
 
-//挂载路由器
+//挂载管理后台必须路由器
 app.use("/admin/category",categoryRouter);
 app.use("/admin",adminRouter);
 app.use("/admin/dish",dishRouter);
