@@ -51,7 +51,7 @@ var upload=multer({
     dest:"tmp/"  //指定客户端上传文件的临时路径
 });
 //定义路由，使用文件上传中间件
-router.post("/image",upload.single("disImg"),(req,res)=>{
+router.post("/image",upload.single("dishImg"),(req,res)=>{
     // console.log(req.body)   //客户端随同图片提交的字符数据
     // console.log(req.file)  //客户端上传的文件
     //把客户端上传的文件从临时目录转移到永久的图片路径下
