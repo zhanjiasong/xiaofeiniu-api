@@ -21,7 +21,8 @@ router.get("/login/:aname/:apwd",(req,res)=>{
         if(err)throw err;
         if(result.length>0){
             res.send({code:200,msg:"login success"})
-            console.log(result[0].aid)
+            // console.log(result)
+            // console.log(result[0].aid)
         }else{
             res.send({code:400,msg:"aname or apwd err"})
         }

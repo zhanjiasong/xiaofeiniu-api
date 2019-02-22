@@ -21,7 +21,7 @@ app.listen(PORT,()=>{
 
 //使用中间件
 app.use(cors());
-app.use(bodyParser.json());//把appliction/JSON格式的请求主体解析出来放入req.body属性
+app.use(bodyParser.json());//把application/JSON格式的请求主体解析出来放入req.body属性
 
 //挂载管理后台必须路由器
 app.use("/admin/category",categoryRouter);
